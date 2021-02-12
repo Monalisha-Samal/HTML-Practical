@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meter</title>
+        <style>
+            meter{
+                width :50%;
+                height :40px;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Meter</legend>
+            <div>
+                Normal<meter></meter>
+            </div>
+            <div>
+                20%<meter min="1" value="20" max="100"></meter>
+            </div>
+            <div>
+                100%<meter min="1" value="100" max="100"></meter>
+            </div>
+            <div>
+                Poor<meter min="1" low="60" high="80" value="100" max="100"></meter>
+            </div>
+            <div>
+                Average<meter min="1" low="40" high="80" value="100" max="100"></meter>
+            </div>
+        </fieldset>
+    </body>
+</html>

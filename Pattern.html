@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pattern</title>
+    </head>
+    <body>
+        <from>
+            <dl>
+                <dt>User Name</dt>
+                <dd>
+                    <input type="text" name="txtName" placeholder="4 to 15 chars Uppercase only" pattern="[A-Z]{4,15}"></dd>
+                <dt>Mobile</dt>
+                <dd>
+                    <input type="text" name="txtMobile" placeholder="+91 to 10 digits" pattern="\+91[0-9]{10}">
+                </dd>
+                <dt>Verify Word</dt>
+                <dd>
+                    <input type="text" name="txtVerify" placeholder="Verify: color or colour" pattern="color?r">
+                </dd>
+            </dl>
+            <button>Register</button>
+        </from>
+    </body>
+</html>

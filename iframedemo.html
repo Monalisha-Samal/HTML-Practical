@@ -1,0 +1,100 @@
+fashion.html
+HTML
+
+footwear.html
+HTML
+
+home.html
+HTML
+Class comments
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping</title>
+        <link rel="stylesheet" href="Font/css/all.css">
+        <style>
+            header {
+                font-size: 30px;
+                text-align: center;
+                background-color: darkcyan;
+                color:white;
+                padding: 20px;
+                border-radius: 30px;
+            }
+            footer {
+                background-color: darkcyan;
+                color:white;
+                text-align: center;
+                font-style: italic;
+                border-radius: 30px;
+            }
+            section {
+                height: 450px;
+            }
+            .leftPanel {
+                width: 200px;
+                float: left;
+                font-size: 20px;
+            }
+            .rightPanel {
+                width: 600px;
+                float: left;
+                margin-left: 50px;
+            }   
+            ul {
+                list-style: none;
+            }
+            li {
+                border:1px solid darkcyan;
+                border-radius: 20px;
+                box-shadow: 2px 2px 4px darkcyan;
+                margin-top: 20px;
+                height: 35px;
+                text-align: left;
+                background-color: lightcyan;
+                padding: 10px;
+            }
+            li:hover {
+                background-color: yellow;
+                color: black;
+            }
+            iframe {
+                border-style: none; 
+           }
+            a:link {
+                color:black;
+            }
+            a{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+           <span class="fa fa-shopping-cart"></span>Shopping Online
+        </header>
+        <section>
+          <div class="leftPanel">
+            <ul>
+                <li><span class="fa fa-home"></span> <a href="Pages/home.html" target="frameBody">Home</a></li>
+                <li><span class="fa fa-tv"></span> <a href="Pages/electronics.html" target="frameBody">Electronics</a></li>
+                <li><span class="fa fa-shoe-prints"></span> <a href="Pages/footwear.html" target="frameBody">Footwear</a></li>
+                <li><span class="fa fa-tshirt"></span> <a href="Pages/fashion.html" target="frameBody">Fashion</a></li>
+            </ul>
+          </div>
+          <div class="rightPanel">
+            <iframe src="Pages/home.html" name="frameBody" width="1000" height="430"></iframe>
+          </div>
+        </section>
+        <footer>
+            <div>
+                &copy; Copyright 2020
+            </div>
+            <div>
+                Electronics | Footwear | Fashion | Contact Us
+            </div>
+        </footer>
+    </body>
+</html>
